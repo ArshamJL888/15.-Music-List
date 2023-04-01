@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #BDBDBD;
+}
+
+.fa-spotify {
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.title {
+    margin: 10px auto;
+    text-align: center;
+    color: rgba(50, 50, 93, 0.7);
+}
+
+.container {
+    margin: 75px auto;
+    background-color: #F5F5F5;
+    width: 1000px;
+    height: 400px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.musicBox {
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    z-index: 9;
+    margin: 24px;
+    margin-top: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.fa-youtube {
+    color: red;
+    font-size: 50px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: 75px;
+}
+
+.icon {
+    display: none;
+    transition: 0.2s;
+}
+
+.AL {
+    background-image: url("../images/another.jpg");
+}
+
+.demons {
+    background-image: url("../images/Demons.png");
+}
+
+.ungrateful {
+    background-image: url("../images/sky.jpg");
+}
+
+.luckyYou {
+    background-image: url("../images/lucky.jpg");
+}
+
+.musicBox:hover {
+    transform: scale(1.05) translateX(0px) translateY(-10px);
+}
+
+.musicBox:hover .icon {
+    display: inline;
+}
+
+.musicBox:hover .icon:focus-within {
+    transform: scale(0.8);
+}
+
+.pauseAll {
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    margin-top: 40px;
+    background-color: #4CAF50;
+    transition: 0.4s;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.pauseAll:hover {
+    transform: scale(1.06) translateX(2.5px) translateY(-6px);
+}
